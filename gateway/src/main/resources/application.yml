@@ -1,0 +1,18 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+      - id: service1
+        uri: lb://SERVICE1
+        predicates:
+          - Path=/service1/**
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
