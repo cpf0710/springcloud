@@ -24,6 +24,7 @@
         <module>eureka</module>
         <module>gateway</module>
         <module>service1</module>
+        <module>ribbon</module>
     </modules>
     <dependencyManagement>
         <dependencies>
